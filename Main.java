@@ -21,6 +21,15 @@ public static void main(String[] args) {
 Scanner inputword = new Scanner(System.in);
 boolean userflung = false;
 
+/*   Array below!!!!!!!!!!!!!
+Object[] answer = new Object[5];
+
+answer[0] = new String();
+answer[1] = new String();
+answer[2] = new String();
+answer[3] = new Integer();
+answer[4] = new Integer();
+*/
 while (userflung == false) {
 System.out.println("YOU HAVE OPENED UP THE BRIDGE...I mean...PROGRAM OF DEATH!");
 System.out.println("What is your name?");
