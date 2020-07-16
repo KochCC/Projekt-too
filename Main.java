@@ -21,28 +21,28 @@ public static void main(String[] args) {
 Scanner inputword = new Scanner(System.in);
 boolean userflung = false;
 
-/*   Array below!!!!!!!!!!!!!
+/*   Array below!!!!!!!!!!!!! */
 Object[] answer = new Object[5];
 
-answer[0] = new String();
-answer[1] = new String();
-answer[2] = new String();
-answer[3] = new Integer();
-answer[4] = new Integer();
-*/
+answer[0] = new String("a");
+answer[1] = new String("a");
+answer[2] = new String("a");
+answer[3] = new Integer(0);
+answer[4] = new Integer(0);
+
 while (userflung == false) {
 System.out.println("YOU HAVE OPENED UP THE BRIDGE...I mean...PROGRAM OF DEATH!");
 System.out.println("What is your name?");
-String userName = inputword.nextLine();
+answer[0] = inputword.nextLine();
 //Do not need to change
 
 System.out.println("\nWhat is your quest?");
-String thisisthequest = inputword.nextLine();
+answer[1] = inputword.nextLine();
 //Do not need to change
 
 System.out.println("\nWhat is the capital of Assyria? (You don't need to use the funny symbols over vowels.)");
-String oneofafewcities = inputword.nextLine();
-if (!"Assur".equals(oneofafewcities) && !"Shubat-Enlil".equals(oneofafewcities) && !"Kalhu".equals(oneofafewcities) && !"Dur-Sharrukin".equals(oneofafewcities) && !"Nineveh".equals(oneofafewcities) && !"Harran".equals(oneofafewcities)) {
+answer[2] = inputword.nextLine();
+if (!"Assur".equals(answer[2]) && !"Shubat-Enlil".equals(answer[2]) && !"Kalhu".equals(answer[2]) && !"Dur-Sharrukin".equals(answer[2]) && !"Nineveh".equals(answer[2]) && !"Harran".equals(answer[2])) {
 userflung = true;
 break;
 }
@@ -51,8 +51,8 @@ Any of these: Assur (aktushually Aššur), Shubat-Enlil, Kalhu, Dur-Sharrukin, N
 */
 
 System.out.println("\nWhat is the airspeed of the unlaiden European swallow in whole kilometers per hour?");
-int europeanswallows = inputword.nextInt();
-if ( europeanswallows != 45) {
+answer[3] = inputword.nextInt();
+if ( answer[3] != 45) {
 userflung = true;
 break;
 }
@@ -61,8 +61,8 @@ break;
 
 
 System.out.println("\nWhat is the airspeed of the unladen African swallow in whole kilometers per hour?");
-int africanswallows = inputword.nextInt();
-if ( africanswallows != 34 ) {
+answer[4] = inputword.nextInt();
+if ( answer[4] != 34 ) {
 userflung = true;
 break;
 }
