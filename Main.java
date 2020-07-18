@@ -13,6 +13,8 @@ answer[2] = new String("a");
 answer[3] = new String("0");
 answer[4] = new String("0");
 while (userflung == false) {
+System.out.print("\033[H\033[2J");
+System.out.flush();
 System.out.println("YOU HAVE OPENED UP THE BRIDGE...I mean...PROGRAM OF DEATH!");
 System.out.println("What is your name?");
 answer[0] = inputword.nextLine();
@@ -22,14 +24,14 @@ answer[1] = inputword.nextLine();
 //Do not need to change
 System.out.println("\nWhat is the capital of Assyria? (You don't need to use the funny symbols over vowels.)");
 answer[2] = inputword.nextLine();
-if (userflung == false && !"Assur".equals(answer[2]) && !"Shubat-Enlil".equals(answer[2]) && !"Kalhu".equals(answer[2]) && !"Dur-Sharrukin".equals(answer[2]) && !"Nineveh".equals(answer[2]) && !"Harran".equals(answer[2])) {
+if ( !"Assur".equals(answer[2]) && !"Shubat-Enlil".equals(answer[2]) && !"Kalhu".equals(answer[2]) && !"Dur-Sharrukin".equals(answer[2]) && !"Nineveh".equals(answer[2]) && !"Harran".equals(answer[2])) {
 System.out.println("WRONG!, it is Assur, Shubat-Enlil, Kalhu, Dur-Sharrukin, Nineveh, or Harran (depending on the king and year).");
 userflung = true;
 }
 /*https://en.wikipedia.org/wiki/Assyria
 Any of these: Assur (aktushually Aššur), Shubat-Enlil, Kalhu, Dur-Sharrukin, Nineveh, Harran
 */
-if (userflung = false){
+if (userflung == false){
 System.out.println("\nWhat is the airspeed of the unlaiden European swallow in whole kilometers per hour?");
 answer[3] = inputword.nextLine();
 if ( !"45".equals(answer[3])){
@@ -39,7 +41,7 @@ userflung = true;
 /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
 28 mph is roughly 12.5 m/s...45 kph*/
 //RegExpObject.test(answer[3])
-if (userflung = false){
+if (userflung == false){
 System.out.println("\nWhat is the airspeed of the unladen African swallow in whole kilometers per hour?");
 answer[4] = inputword.nextLine();
 if ( !"34".equals(answer[4])){
@@ -48,14 +50,13 @@ userflung = true;
 }}
 /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
 21 mph...33.8 kph*/
-if (userflung != true){
-sirrobin = false;
-userflung = true;
+if (userflung == false){
+sirrobin = false; //if user not flung, then user is not Sir Robin
 }
-if ( sirrobin == true){
-System.out.println("\n\n\n\n\n\nSIR " + answer[0] + ",");
+if ( sirrobin == false){
+System.out.println("\nSIR " + answer[0] + ",");
 System.out.println("WHO IS ON A QUEST TO " + answer[1] + ",");
-System.out.println("May proceed, I hope enjoy your day.");
+System.out.println("May proceed, please enjoy your day.");
 }
 else{
 System.out.println("[Laughs in evil] You are no king, YOU FAIL! GOOD DAY SIR OR MADAM!");
@@ -65,12 +66,14 @@ if (lastcall.equals("N") || lastcall.equals("n")){
 lastcall = "Graham Chapman";
 }
 while ( !lastcall.equals("Y") && !lastcall.equals("N") && !lastcall.equals("y") &&!lastcall.equals("n")){ 
-System.out.println("\n\nWas that the last one?  (Y/N)\n\n\n\n\n");
+System.out.println("\n\nWas that the last one?  (Y/N)");
 lastcall = inputword.nextLine();
+System.out.println("\n\n");
 }
 if (lastcall.equals("Y")|| lastcall.equals("y")){
 userflung = true;
 }
+sirrobin = true;
 }
 }
 }
