@@ -43,6 +43,7 @@ answer[1] = inputword.nextLine();
 System.out.println("\nWhat is the capital of Assyria? (You don't need to use the funny symbols over vowels.)");
 answer[2] = inputword.nextLine();
 if (!"Assur".equals(answer[2]) && !"Shubat-Enlil".equals(answer[2]) && !"Kalhu".equals(answer[2]) && !"Dur-Sharrukin".equals(answer[2]) && !"Nineveh".equals(answer[2]) && !"Harran".equals(answer[2])) {
+System.out.println("WRONG!, it is Assur, Shubat-Enlil, Kalhu, Dur-Sharrukin, Nineveh, or Harran depending on the king and year.");
 userflung = true;
 break;
 }
@@ -53,6 +54,7 @@ Any of these: Assur (aktushually Aššur), Shubat-Enlil, Kalhu, Dur-Sharrukin, N
 System.out.println("\nWhat is the airspeed of the unlaiden European swallow in whole kilometers per hour?");
 answer[3] = inputword.nextLine();
 if (!"45".equals(answer[3])){
+System.out.println("WRONG! It is not " + answer[3] + ", it is, rounded in KPM, 45!");
 userflung = true;
 break;
 }
@@ -63,20 +65,25 @@ break;
 System.out.println("\nWhat is the airspeed of the unladen African swallow in whole kilometers per hour?");
 answer[4] = inputword.nextLine();
 if (!"34".equals(answer[4])){
+System.out.println("WRONG! It is not " + answer[4] + ", it is, rounded in KPM, 34!");
 userflung = true;
 break;
 }
 /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
 21 mph...33.8 kph*/
 
-
-if (userflung != true){
-System.out.println("\n\nOh, you may go, enjoy your day.\n\n\nNEXT!\n");
 }
-} //end of while loop
-if (userflung == true){
+if (userflung != true){
+System.out.println("\n\n\n\n\n\nSIR " + answer[0] + ",");
+System.out.println("WHO IS ON A QUEST TO " + answer[1] + ",");
+System.out.println("May proceed, I hope enjoy your day.\nNEXT!\n\n\n\n\n");
+userflung = true;
+}
+
+else{
 System.out.println("[Laughs in evil] You are no king, YOU FAIL! GOOD DAY SIR OR MADAM!");
 }
+
 
 }
 }
