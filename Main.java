@@ -1,19 +1,3 @@
-/*Feel free to utilize your previous code as a starting point!
-
-Project Specifications:
-
-must utilize at least 1 array variable
-must accept user input
-must utilize a loop
-must utilize a conditional
-must run as an import in repl.it!
-similar to Project 1, this should be a practical tool of your choosing
-To turn in your project, please input the URL for your Github project for this. Each project should have a unique Github repo, and each should be importable into Repl.it without change for me to evaluate!
-
-e.g. If I was turning this in, mine would be: https://github.com/TheElliot/LiberateToAutomate (Links to an external site.)
-
-P.S. The most important thing you can do is to turn projects in. I can't legitimately give a grade above 0 without a project turned in, so please help me to help you get your well-deserved A! */
-
 //"Inspired" by Monty Python's Search for the Holy Grail movie, Bridge of Death scene
 import java.util.*;
 public class Main {
@@ -81,7 +65,7 @@ if (lastcall.equals("N") || lastcall.equals("n")){
 lastcall = "Graham Chapman";
 }
 while ( !lastcall.equals("Y") && !lastcall.equals("N") && !lastcall.equals("y") &&!lastcall.equals("n")){ 
-System.out.println("\n\nWas that the last one?  (Y/N)\n");
+System.out.println("\n\nWas that the last one?  (Y/N)\n\n\n\n\n");
 lastcall = inputword.nextLine();
 }
 if (lastcall.equals("Y")|| lastcall.equals("y")){
