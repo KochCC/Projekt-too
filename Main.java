@@ -27,8 +27,8 @@ Object[] answer = new Object[5];
 answer[0] = new String("a");
 answer[1] = new String("a");
 answer[2] = new String("a");
-answer[3] = new Integer(0);
-answer[4] = new Integer(0);
+answer[3] = new String("0");
+answer[4] = new String("0");
 
 while (userflung == false) {
 System.out.println("YOU HAVE OPENED UP THE BRIDGE...I mean...PROGRAM OF DEATH!");
@@ -51,18 +51,18 @@ Any of these: Assur (aktushually Aššur), Shubat-Enlil, Kalhu, Dur-Sharrukin, N
 */
 
 System.out.println("\nWhat is the airspeed of the unlaiden European swallow in whole kilometers per hour?");
-answer[3] = inputword.nextInt();
-if ( answer[3] != 45) {
+answer[3] = inputword.nextLine();
+if (!"45".equals(answer[3])){
 userflung = true;
 break;
 }
 /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
 28 mph is roughly 12.5 m/s...45 kph*/
-
+//RegExpObject.test(answer[3])
 
 System.out.println("\nWhat is the airspeed of the unladen African swallow in whole kilometers per hour?");
-answer[4] = inputword.nextInt();
-if ( answer[4] != 34 ) {
+answer[4] = inputword.nextLine();
+if (!"34".equals(answer[4])){
 userflung = true;
 break;
 }
@@ -71,7 +71,7 @@ break;
 
 
 if (userflung != true){
-System.out.println("Oh, you may go, enjoy your day.");
+System.out.println("\n\nOh, you may go, enjoy your day.\n\n\nNEXT!\n");
 }
 } //end of while loop
 if (userflung == true){
