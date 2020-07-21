@@ -37,43 +37,45 @@ public class Main {
         if ( !"45".equals(answer[3])){
           System.out.println("WRONG! It is not " + answer[3] + ", it is, rounded in KPM, 45!");
           userflung = true;
-        }}
-        /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
-        28 mph is roughly 12.5 m/s...45 kph*/
-        //RegExpObject.test(answer[3])
-        if (userflung == false){
-          System.out.println("\nWhat is the airspeed of the unladen African swallow in whole kilometers per hour?");
-          answer[4] = inputword.nextLine();
-          if ( !"34".equals(answer[4])){
-            System.out.println("WRONG! It is not " + answer[4] + ", it is, rounded in KPM, 34!");
-            userflung = true;
-          }}
-          /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
-          21 mph...33.8 kph*/
-          if (userflung == false){
-            sirrobin = false; //if user not flung, then user is not Sir Robin
-          }
-          if ( sirrobin == false){
-            System.out.println("\nSIR " + answer[0] + ",");
-            System.out.println("WHO IS ON A QUEST TO " + answer[1] + ",");
-            System.out.println("May proceed, please enjoy your day.");
-          }
-          else{
-            System.out.println("[Laughs in evil] You are no king, YOU FAIL! GOOD DAY SIR OR MADAM!");
-          }
-          userflung = false;
-          if (lastcall.equals("N") || lastcall.equals("n")){
-            lastcall = "Graham Chapman";
-          }
-          while ( !lastcall.equals("Y") && !lastcall.equals("N") && !lastcall.equals("y") &&!lastcall.equals("n")){ 
-            System.out.println("\n\nWas that the last one?  (Y/N)");
-            lastcall = inputword.nextLine();
-            System.out.println("\n\n");
-          }
-          if (lastcall.equals("Y")|| lastcall.equals("y")){
-            userflung = true;
-          }
-          sirrobin = true;
         }
       }
+      /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
+      28 mph is roughly 12.5 m/s...45 kph*/
+      //RegExpObject.test(answer[3])
+      if (userflung == false){
+        System.out.println("\nWhat is the airspeed of the unladen African swallow in whole kilometers per hour?");
+        answer[4] = inputword.nextLine();
+        if ( !"34".equals(answer[4])){
+          System.out.println("WRONG! It is not " + answer[4] + ", it is, rounded in KPM, 34!");
+          userflung = true;
+        }
+      }
+      /*use https://www.quora.com/What-is-the-air-speed-velocity-of-an-unladened-sparrow
+      21 mph...33.8 kph*/
+      if (userflung == false){
+        sirrobin = false; //if user not flung, then user is not Sir Robin
+      }
+      if ( sirrobin == false){
+        System.out.println("\nSIR " + answer[0] + ",");
+        System.out.println("WHO IS ON A QUEST TO " + answer[1] + ",");
+        System.out.println("May proceed, please enjoy your day.");
+      }
+      else{
+        System.out.println("[Laughs in evil] You are no king, YOU FAIL! GOOD DAY SIR OR MADAM!");
+      }
+      userflung = false;
+      if (lastcall.equals("N") || lastcall.equals("n")){
+        lastcall = "Graham Chapman";
+      }
+      while ( !lastcall.equals("Y") && !lastcall.equals("N") && !lastcall.equals("y") &&!lastcall.equals("n")){ 
+        System.out.println("\n\nWas that the last one?  (Y/N)");
+        lastcall = inputword.nextLine();
+        System.out.println("\n\n");
+      }
+      if (lastcall.equals("Y")|| lastcall.equals("y")){
+        userflung = true;
+      }
+      sirrobin = true;
     }
+  }
+}
