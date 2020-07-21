@@ -7,11 +7,11 @@ boolean userflung = false;
 boolean sirrobin = true;
 String lastcall = "afe";
 Object[] answer = new Object[5];
-answer[0] = new String("a");
-answer[1] = new String("a");
-answer[2] = new String("a");
-answer[3] = new String("0");
-answer[4] = new String("0");
+answer[0] = new String("Connie Booth");
+answer[1] = new String("Eric Idle");
+answer[2] = new String("Terry Gilliam");
+answer[3] = new String("John Cleese");
+answer[4] = new String("Michael Palin");
 while (userflung == false) {
 System.out.print("\033[H\033[2J");
 System.out.flush();
